@@ -20,12 +20,12 @@ Static Function ReportDef(cPerg)
     oReport:SetLandScape()
 
     oSection1 := TRSection():New(oReport, 'Estado')
-    TRCell():New(oSection1, 'Indice', , 'Indice', '', 5, 'C')
-    TRCell():New(oSection1, 'CC2_EST', , 'Cod. Estado', '', TamSX3('CC2_EST')[1], 'C')
+    TRCell():New(oSection1, 'Indice', , 'Indice', '', 5, , , "CENTER")
+    TRCell():New(oSection1, 'CC2_EST', , 'Cod. Estado', '', TamSX3('CC2_EST')[1], , , "CENTER")
 
     oSection2 := TRSection():New(oReport, 'Municipio')
-    TRCell():New(oSection2, 'Indice', , 'Indice', '', 5, 'C')
-    TRCell():New(oSection2, 'CC2_CODMUN', , 'Cod. municipio', '', TamSX3('CC2_CODMUN')[1], 'C')
+    TRCell():New(oSection2, 'Indice', , 'Indice', '', 5, , , "CENTER")
+    TRCell():New(oSection2, 'CC2_CODMUN', , 'Cod. municipio', '', TamSX3('CC2_CODMUN')[1], , , "CENTER")
     TRCell():New(oSection2, 'CC2_MUN', , 'Nome municipio', '', TamSX3('CC2_MUN')[1])
 return oReport
 

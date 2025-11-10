@@ -1,11 +1,11 @@
 #include "protheus.ch"
 
-user function atribu()
-    local nNum1 := 10
-    local nNum2 := 20
+User Function atribu()
 
-    nNum1 += nNum2
+    LOCAL nNum1 := 10
+    LOCAL nNum2 := 20
 
+    // 1. Lógica da Aplicação
+    nNum1 += nNum2 // nNum1 agora é 30
     Alert(cValToChar(nNum1))
-
-return
+Return
